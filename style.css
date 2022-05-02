@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 body{
     margin: 0;
     padding: 0;
     width: 100%;
+    font-family: Anton;
 }
 
 h1, h2, h3, h4, h5 {
@@ -11,6 +13,7 @@ h1, h2, h3, h4, h5 {
 
 #videocontainer {
     position: relative;
+    display: flex;
     width: 100%;
     height: 100vh;
     margin: 0 auto;
@@ -33,26 +36,23 @@ h1, h2, h3, h4, h5 {
 #videocontainer:after {
     content: '';
     position: absolute;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 0;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
   }
-  #overlay {
+  #overlay1 {
     position:absolute;
-    top:0;
-    left:0;
+    top: 33%;
+    left: 25%;
+    height: 100vh;
     align-items: center;
-	justify-content: center;
 	text-align: center;
     z-index:1;
-
-    height: 100vh;
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	color: #fff;
+	color: rgba(20, 20, 20, 0.9);
+    font-family: Anton;
+    flex-direction: column;
 }
