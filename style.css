@@ -44,6 +44,7 @@ video {
     left: 0;
   }
   #overlay {
+    width: 100%;
     position:absolute;
     top: 20%;
     height: 100vh;
