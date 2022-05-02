@@ -1,8 +1,22 @@
 //Get window size
-let height = window.innerHeight;
-let width = window.innerWidth;
+let windowHeight = window.innerHeight;
+let windowWidth = window.innerWidth;
 
-document.getElementById("videocontainer").style.width = width;
-console.log("Resized width");
-document.getElementById("backgroundvideo").style.height = height;
-console.log("Resized height");
+console.log("Window width = " + windowWidth);
+console.log("Window height = " + windowHeight);
+
+var wh = windowHeight + "px"
+var ww = windowWidth + "px"
+
+
+function setDimensions() {
+    //document.getElementById("videocontainer").style.width = ww;
+    document.getElementById("backgroundvideo").style.width = ww;
+    console.log("Resized width");
+    //document.getElementById("videocontainer").style.height = wh;
+    document.getElementById("backgroundvideo").style.height = wh;
+    console.log("Resized height");
+}
+
+
+setDimensions();
