@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5 {
     right: 0;
     bottom: 0;
     left: 0;
+    background-image: url("images/grotto.jpg");
   }
 video {
     width: 100%;
